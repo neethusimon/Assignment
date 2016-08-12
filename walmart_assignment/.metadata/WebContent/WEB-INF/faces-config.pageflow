@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14706700013630" configfile="/walmart_assignment/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Search.xhtml" id="pf14706720032494" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14706720032495 pf14706721887487 pf14708616065178" inlinks="pf14706721887487" path="/Search.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Recommend.xhtml" id="pf14706720032496" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14706720032495" path="/Recommend.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="NoRecommend.xhtml" id="pf14708616065179" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14708616065178" path="/NoRecommend.xhtml"/>
+  <links id="pf14706720032495" target="pf14706720032496" source="pf14706720032494" outcome="recommend"/>
+  <links id="pf14706721887487" target="pf14706720032494" source="pf14706720032494" outcome="cancel"/>
+  <links id="pf14708616065178" target="pf14708616065179" source="pf14706720032494" outcome="norecommend"/>
+</pageflow:Pageflow>

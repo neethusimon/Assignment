@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<managed-bean-name>searchproduct</managed-bean-name>
+		<managed-bean-class>api_assignment.Searchproduct</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+ 
+    <navigation-rule> 
+ 
+     <from-view-id>/Search.xhtml</from-view-id> 
+     
+     <navigation-case>
+       <from-outcome>recommend</from-outcome>
+       <to-view-id>/Recommend.xhtml</to-view-id> 
+     </navigation-case>
+      <navigation-case>
+       <from-outcome>norecommend</from-outcome>
+       <to-view-id>/NoRecommend.xhtml</to-view-id> 
+     </navigation-case>
+          <navigation-case>
+       <from-outcome>cancel</from-outcome>
+       <to-view-id>/Search.xhtml</to-view-id> 
+     </navigation-case>
+     </navigation-rule>
+    
+  
+  
+
+</faces-config>

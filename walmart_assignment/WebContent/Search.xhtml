@@ -1,0 +1,50 @@
+<!-- NeethuSimon Walmart_api_assignment
+ Search for products based upon a user-provided search string
+ Use the first item in the search response as input for a product recommendation search
+ Retrieve reviews of the first 10 product recommendations
+ Rank order the recommended products based upon the review sentiments
+ Search page allowing users to provide search string-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core" >
+      
+      
+ <h:head>
+ <title>Product Search page</title>
+ </h:head>     
+  <h:body>
+  <h:form name ="forms" method="post" >
+     <h:messages/>
+      <h:panelGrid columns="2" >
+ <!-- Enter a product name for search-->
+         Product name *
+          <h:inputText value ="#{searchproduct.product.productName}"
+                       required="true"
+                       requiredMessage="Please enter a product name for search"
+                       id ="productName">
+    
+           </h:inputText>
+   <!-- Select a  search filter-->
+           Filter by
+          <h:selectOneRadio value="#{searchproduct.product.filter}" 
+                             id = "filter">
+                          
+        <f:selectItem itemValue="sortbyprice" itemLabel="increasing price " />
+        <f:selectItem itemValue="bestseller" itemLabel="best sellers " />
+     
+        
+         </h:selectOneRadio>
+             </h:panelGrid>
+ <!-- Search button -->
+            <h:commandButton  value ="Search" action ="#{searchproduct.search}">
+            </h:commandButton>
+ <!-- Cancel button -->
+           <h:commandButton value="Cancel" immediate="true" action="cancel" >
+           </h:commandButton> 
+      
+  </h:form>
+  </h:body>   
+      
+</html>
