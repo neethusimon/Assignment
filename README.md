@@ -12,6 +12,7 @@
 This solution consists of a Web application developed using `JSF Framework` to consume Walmart's API which can search for a product and rank its recommendation based on ratings/reviews. The search results can be filtered using two options given below. 
 * Best Sellers
 * Increasing price
+ 
 Default search action is without filters. 
 
 ### Assumptions:
