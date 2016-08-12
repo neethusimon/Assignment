@@ -29,7 +29,7 @@ http://ec2-52-35-123-130.us-west-2.compute.amazonaws.com/walmart_assignment/face
 ## Environment
 
 * AWS EC2 bitnami tomcat
-* JSF 2.2, Tomcatv7.0
+* JSF 2.2, Tomcat 7.0
 * specify apiKey and api url in  WebContent/WEB-INF/config.properties
 
 ```
