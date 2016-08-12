@@ -7,11 +7,23 @@
 * Retrieve reviews of the first 10 product recommendations
 * Rank order the recommended products based upon the review sentiments
 
+## Solution details
+
+This solution consists of a Web application developed using `JSF Framework` to consume Walmart's API which can search for a product and rank its recommendation based on ratings/reviews. The search results can be filtered using two options given below. 
+* Best Sellers
+* Increasing price
+Default search action is without filters. 
+
+### Assumptions:
+* Products with *no reviews* are assumed to have an `Average overall rating: 0.0`
+
 ## Testing
 
 Solution is deployed in AWS 
 
 http://ec2-52-35-123-130.us-west-2.compute.amazonaws.com/walmart_assignment/faces/Search.xhtml
+
+
 
 ## Environment
 
